@@ -1,11 +1,8 @@
-# app.py
 import streamlit as st
 import joblib
 import numpy as np
 
-# --- 10. Local Deployment (Streamlit) ---
-
-# Set page title and icon
+# Page title and icon
 st.set_page_config(page_title="Liquidity Predictor", page_icon="💧")
 
 # Load the trained model and scaler
@@ -100,3 +97,5 @@ else:
         
         st.success(f"**Predicted Illiquidity Score:** `{prediction[0]:.10f}`")
         st.info("Remember: A higher score means *less* liquidity (higher price impact).")
+
+        st.success(f"Created By Vikash Kumar")
